@@ -3,10 +3,9 @@
 var timerElement = document.getElementById("timer");
 
 // Function to update date and time
-function updateTime() {
-    var now = new Date();
-    timerElement.innerHTML = now;
-}
-
-// Call updateTime function every 1000 milliseconds (1 second)
-setInterval(updateTime, 1000);
+let currentDate=new Date();
+setInterval(function(){
+	currentDate=new Date;
+	timerElememt.innerHTML=currentDate.toLocalString();
+},1000
+})
